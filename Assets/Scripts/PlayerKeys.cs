@@ -22,10 +22,18 @@ public class PlayerKeys : MonoBehaviour
         {
             jumpKey = true;
         }
+        else
+        {
+            jumpKey = false;
+        }
 
         if (Input.GetKey(KeyCode.J))
         {
             glideKey = true;
+        }
+        else
+        {
+            glideKey = false;
         }
 
     }
