@@ -6,7 +6,7 @@ public class KassieGameManager : MonoBehaviour
 {
     public GameObject platformPrefab;
 
-    public int platformCCount = 300;
+    public int platformCCount = 100;
     
     // Start is called before the first frame update
     void Start()
@@ -19,11 +19,5 @@ public class KassieGameManager : MonoBehaviour
             spawnPosition.x = Random.Range(-5f, 5f);
             Instantiate(platformPrefab, spawnPosition, Quaternion.identity);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
