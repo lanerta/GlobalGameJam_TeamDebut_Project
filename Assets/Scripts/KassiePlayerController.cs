@@ -26,7 +26,7 @@ public class KassiePlayerController : MonoBehaviour
     void Update()
     {
 
-        moveX = Input.GetAxis("Horizontal") * moveSpeed;
+        moveX = Input.GetAxisRaw("Horizontal") * moveSpeed;
 
         if (moveX > 0)
         {
@@ -45,9 +45,11 @@ public class KassiePlayerController : MonoBehaviour
         else
         {
             _spriteRenderer.sprite = downSprite;
+            
         }
     }
 
+    
     private void FixedUpdate()
     {
         Vector2 velocity = _rigidbody2d.velocity;

@@ -6,11 +6,13 @@ using UnityEngine;
 public class KassiePlatformScript : MonoBehaviour
 {
     public float jumpForce = 10f;
+    [SerializeField] private AudioSource jumpSoundEffect;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.relativeVelocity.y <= 0f)
         {
+            jumpSoundEffect.Play();
             Rigidbody2D _rigidbody = collision.gameObject.GetComponent<Rigidbody2D>();
             if (_rigidbody != null)
             {
