@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScene.unity
     guid: 6c59ddf4bc3cbc3429aa24859bfaf48c
   - enabled: 1
-    path: Assets/Scenes/FinalScene.unity
-    guid: 8fe08ef5bfbac724cacb6d40934d187a
+    path: Assets/Scenes/FinalSceneLeo.unity
+    guid: abc025c49bc33f44f8b0760c097b4d23
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 34df8f4eebb51164fa0576636b5f6172

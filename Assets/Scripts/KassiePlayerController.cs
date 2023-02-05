@@ -2,10 +2,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class KassiePlayerController : MonoBehaviour
 {
     public float moveSpeed = 10f;
+    public GameObject screenBottom;
 
     private Rigidbody2D _rigidbody2d;
     private SpriteRenderer _spriteRenderer;
@@ -45,7 +47,12 @@ public class KassiePlayerController : MonoBehaviour
         else
         {
             _spriteRenderer.sprite = downSprite;
-            
+        }
+
+        if (transform.position.y < screenBottom.transform.position.y)
+        {
+            Debug.Log("Below Screen Bottom");
+            SceneManager.LoadScene("GameOver");
         }
     }
 
