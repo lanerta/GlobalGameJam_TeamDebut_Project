@@ -7,7 +7,7 @@ public class KassiePlayerController : MonoBehaviour
 {
     public float moveSpeed = 10f;
 
-    public Rigidbody2D _rigidbody2d;
+    private Rigidbody2D _rigidbody2d;
     private SpriteRenderer _spriteRenderer;
     private bool isFacingLeft;
     [SerializeField] private Sprite upSprite;
