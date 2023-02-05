@@ -9,4 +9,11 @@ public class KassieMenuEvents : MonoBehaviour
     {
         SceneManager.LoadScene(index);
     }
+
+    public void LoadMenu(int index)
+    {
+        SceneManager.LoadScene(index);
+    }
+
+    
 }
