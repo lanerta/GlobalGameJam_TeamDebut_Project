@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerKeys : MonoBehaviour
 {
-    public float horizontalI = 0;
+    public float horizontalI;
     public bool jumpKey;
     public bool glideKey;
     // Start is called before the first frame update
